@@ -37,7 +37,7 @@ body {
 #section1 {background-image : url('src/home.png');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;}
+    background-size: cover;}
 #section2 {background-image : url('src/about.png');
     background-repeat: no-repeat;
     background-position: center;
