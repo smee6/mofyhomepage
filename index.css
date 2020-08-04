@@ -26,6 +26,7 @@ a {text-decoration: none;}
 #contents {text-align: center; color: rgb(0, 0, 0);}
 #contents > div {height: 100vh;}
 #contents > div h2 {font-size: 90px; font-weight: 200; text-transform: uppercase;}
+#contents > div h3 {font-size: 30px; font-weight: 200; text-transform: uppercase;}
 #contents > div h2 strong {font-weight: 700; font-style: italic;}
 #contents .textandcon {padding-top: 50vh;}
 
@@ -50,16 +51,13 @@ a {text-decoration: none;}
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
-#section6 {background-image : url('src/contact.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;}
+#section6 {color: white; background-color: black;}
 /*MAIN contents box in section*/
 #contsbox {height: 100%; width: 100%; margin: 0 auto; background: rgba(197, 197, 197, 0); }
 /* footer */
-#footer00 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 20px 5px;}
-.footer01 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 5px 5px;}
-.footer02 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: rgb(133, 133, 133); padding: 10px 5px; font-size: smaller;}
+#footer00 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 20px 5px; font-weight: 200;}
+.footer01 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 5px 5px; font-weight: 200;}
+.footer02 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: rgb(133, 133, 133); padding: 10px 5px; font-size: smaller; font-weight: 200;}
 /* mediaquery */
 @media (max-width:980px){
     #nav .menu {display: none;}
