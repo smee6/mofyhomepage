@@ -7,12 +7,12 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
 }
 /* nav */
-#nav {position: fixed; left: 0; top: 0; width: 100%; background-color: rgba(112, 112, 112, 0.1);}
+#nav {position: fixed; left: 0; top: 0; width: 100%; background-color: rgba(122, 122, 122, 0.1);}
 #nav h1 {float: left; color: rgb(255, 255, 255); font-size: 30px; padding: 5px 5px 5px 50px; font-family: 'Noto Sans KR' }
 #nav .bnr {margin: 11px 0 0 35px; max-height: 80px; width: auto;}
 #nav .menu {float: right; padding-right: 100px; }
 #nav .menu li {display: inline; }
-#nav .menu li a {display: inline-block; font-size: 30px; padding: 35px 15px 25px 15px; color: rgb(173, 173, 173); font-weight: 200; font-family: 'Noto Sans KR'; text-transform: capitalize;}
+#nav .menu li a {display: inline-block; font-size: 30px; padding: 35px 15px 25px 15px; color: rgb(173, 172, 172); font-weight: 200; font-family: 'Noto Sans KR'; text-transform: capitalize;}
 #nav .menu li.active a {color: rgb(255, 255, 255);}
 #nav .mNav {display: none; position: absolute; top: 30px; right: 10px; width: 65px; height: 45px; cursor: pointer;/*background-color: rgba(255,255,255,0.3);*/}
 
@@ -42,11 +42,11 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
-#section3 {background-image : url('src/works.png');
+#section3 {background-image : url('src/service.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
-#section4 {background-image : url('src/people.png');
+#section4 {background-image : url('src/news.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;}
