@@ -30,21 +30,36 @@ a {text-decoration: none;}
 #contents .textandcon {padding-top: 50vh;}
 
 /* section */
-#section1 {background:rgb(255, 255, 255);}
-#section2 {background:rgb(255, 255, 255);}
-#section3 {background:rgb(255, 255, 255);}
-#section4 {background:rgb(255, 255, 255);}
-#section5 {background:rgb(255, 255, 255);}
-#section6 {background:rgb(255, 255, 255);}
+#section1 {background-image : url('src/home.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+#section2 {background-image : url('src/about.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+#section3 {background-image : url('src/works.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+#section4 {background-image : url('src/people.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+#section5 {background-image : url('src/future.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+#section6 {background-image : url('src/contact.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
 /*MAIN contents box in section*/
-#contsbox {height: 100%; width: 95%; margin: 0 auto; background: rgba(197, 197, 197, 0.8); }
-#contsbox0 {height: 100%; width: 100%; margin: 0 auto; background-image : url('src/home.png');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;}
+#contsbox {height: 100%; width: 100%; margin: 0 auto; background: rgba(197, 197, 197, 0); }
 /* footer */
-#footer {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 5px 5px;}
-
+#footer00 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 20px 5px;}
+.footer01 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: white; padding: 5px 5px;}
+.footer02 {background:rgb(0, 0, 0); text-align: center; font-family: 'Abel'; color: rgb(133, 133, 133); padding: 10px 5px; font-size: smaller;}
 /* mediaquery */
 @media (max-width:980px){
     #nav .menu {display: none;}
