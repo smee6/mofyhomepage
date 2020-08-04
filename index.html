@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+    <title>MOFY, More Opportunity for Youth</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i'" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <nav id="nav">
+        <img class ="bnr" src="src/mofy white logo crop.png" >
+        <div class="mNav">
+            <div class="icon-wrap">
+                <div class="icon"></div>
+            </div>
+        </div>
+
+        <ul class="menu">
+            <li class="active"><a href="#section1">HOME</a></li>
+            <li><a href="#section2">ABOUT</a></li>
+            <li><a href="#section3">WORKS</a></li>
+            <li><a href="#section4">PEOPLE</a></li>
+            <li><a href="#section5">FUTURE</a></li>
+            <li><a href="#section6">CONTACT</a></li>
+        </ul>   
+    </nav>
+
+    <div id="contents">
+        <div id="section1"><div id="contsbox0"> <div class="textandcon"><p>대충 제목같은거랑 </p><p> 여기에 어떤 소개같은걸 쓰고 </p></div></div></div>
+        <div id="section2"><div id="contsbox"> <div class="textandcon">여기가 소개구나</div></div></div>
+        <div id="section3"><div id="contsbox"> <div class="textandcon">이거는 사업 아이템이나 그 어플들 링크</div></div></div>
+        <div id="section4"><div id="contsbox"> <div class="textandcon">사람 운영진</div></div></div>
+        <div id="section5"><div id="contsbox"> <div class="textandcon">이거는 미래에 어케 할지</div></div></div>
+        <div id="section6"><div id="contsbox"> <div class="textandcon">아 이게 컨택트</div></div></div>
+    </div>
+    <div id="footer">
+        <p>thx</p>
+        <p><h2>This is the footer of page</h2></p>
+        <p>All right reserved</p>
+        <p>gonna make your future brighter</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+        var nav = $("#nav ul li");
+        var cont = $("#contents > div");
+
+        nav.click(function(e){
+            e.preventDefault();
+            var target = $(this);
+            var index = target.index();
+            //alert(index);
+            var section = cont.eq(index);
+            var offset = section.offset().top;
+            $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
+        });
+
+        $(window).scroll(function(){
+            var wScroll = $(this).scrollTop();
+            
+            if(wScroll >= cont.eq(0).offset().top){
+                nav.removeClass("active");
+                nav.eq(0).addClass("active");
+            }
+            if(wScroll >= cont.eq(1).offset().top){
+                nav.removeClass("active");
+                nav.eq(1).addClass("active");
+            }
+            if(wScroll >= cont.eq(2).offset().top){
+                nav.removeClass("active");
+                nav.eq(2).addClass("active");
+            }
+            if(wScroll >= cont.eq(3).offset().top){
+                nav.removeClass("active");
+                nav.eq(3).addClass("active");
+            }
+            if(wScroll >= cont.eq(4).offset().top){
+                nav.removeClass("active");
+                nav.eq(4).addClass("active");
+            }
+            if(wScroll >= cont.eq(5).offset().top){
+                nav.removeClass("active");
+                nav.eq(5).addClass("active");
+            }
+        });
+        
+        $(".mNav").click(function(){
+            //$(".menu").css("display","block");
+            //$(".menu").show();
+            //$(".menu").fadeIn();
+            //$(".menu").slideDown();
+            $(".menu").toggle();
+            //$(".menu").fadeToggle();
+            //$(".menu").slideToggle();
+        });
+
+        $(window).resize(function(){
+            var wWidth = $(window).width();
+            //화면 크기가 960 이상일 때 style="display:none" 삭제
+            if(wWidth > 960 && $(".menu").is(":hidden") ){
+                $(".menu").removeAttr("style");
+            }
+        });
+    </script>
+</body>
+</html>
