@@ -11,7 +11,7 @@ a {text-decoration: none;}
 #nav .menu li {display: inline; }
 #nav .menu li a {display: inline-block; font-size: 35px; padding: 35px 15px 25px 15px; color: rgb(173, 173, 173); font-weight: bold; font-family: 'Abel'; text-transform: capitalize;}
 #nav .menu li.active a {color: rgb(255, 255, 255);}
-#nav .mNav {display: none; position: absolute; top: 7px; right: 10px; width: 65px; height: 45px; cursor: pointer;/*background-color: rgba(255,255,255,0.3);*/}
+#nav .mNav {display: none; position: absolute; top: 30px; right: 10px; width: 65px; height: 45px; cursor: pointer;/*background-color: rgba(255,255,255,0.3);*/}
 
 /* icon-menu */
 .icon-wrap {padding-left: 10px;}
